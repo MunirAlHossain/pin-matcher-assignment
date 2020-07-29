@@ -1,53 +1,74 @@
+/* Style for box */
+
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    background: #10101B;
-    height: 100vh;
+  background: #10101B;
+  height: 85vh;
 }
 .container {
-    margin-top: 30px;
+  margin-top: 20px;
 }
+
+/* Common style for input section  */
 
 .half-width {
-    height: 570px;
-    background: #222436;
-    padding: 30px;
-    text-align: center;
+  height: 570px;
+  background: #222436;
+  padding: 30px;
+  text-align: center;
+  margin-top: 5px;
 }
+/* style for random number button */
+
 .generate-btn{
-    margin-top: 140px;
-    width: 180px;
-    padding: 50px;
-    border-radius: 50%;
-    border: 8px solid #39458C;
-    background-color: #495BC3;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+  margin-top: 140px;
+  width: 180px;
+  padding: 30px;
+  border-radius: 50%;
+  border: 5px solid #2a18ca;
+  background-color: #6d7785;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  
 }
-.generate-btn:focus{
-    outline: none;
-    box-shadow: none;
+.generate-btn:hover{
+  background: hsl(120, 100%, 45%);
+transition: 1ms;
 }
 
+.generate-btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+/* Style for user input Text  */
+
 input[type='text']{
-    background-color: #3D4153;
-    padding: 10px 0px;
-    width: 80%;
-    margin: 0 auto;
-    border: 2px solid #858299;
-    height: 50px;
-    padding: 10px;
+  background-color: #3D4153;
+  padding: 10px 0px;
+  color: #ffffff; 
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #858299;
+  height: 50px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+    
 }
 input[type='text']:focus {
-    background-color: #3D4153;
-    color: #fff;
-    font-size: 20px;
+  background-color: #3D4153;
+  color: #fff;
+  font-size: 20px;
 }
 .numbers {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .calc-typed {
@@ -61,45 +82,66 @@ color: #fff;
 width: 100%;
 }
 
+/* Style for user input number button */
 .button {
 width: 20%;
-background: #425062;
+background: #0a6de6;
 color: #fff;
 padding: 20px 0;
 margin: 5px;
 display: inline-block;
-font-size: 25px;
+font-size: 20px;
 text-align: center;
 vertical-align: middle;
 margin-right: -4px;
 border-radius: 10px;
 cursor: pointer;
+position: relative;
+    
 }
+.button:hover{
+  background:#ff4d94;
+transition: 1ms;
+}
+
 .blink-me {
 color: #E0B612;
 }
+
+/* Style for submit Button */
+
 .submit-btn {
-    border: none;
-    margin-top: 20px;
-    padding: 10px 120px;
-    border-radius: 5px;
-    background: #495BC3;
-    color: #fff;
+  border: none;
+  margin-top: 20px;
+  padding: 10px 120px;
+  border-radius: 10px;
+  background: #6d7785;
+  color: rgb(245, 237, 237);
+  font-size: 18px;
+  font-weight: bold;
 }
+
+.submit-btn:hover{
+  background: hsl(120, 100%, 45%);
+transition: 1ms;
+}
+
+/* Style for notify message */
+
 .notify {
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    background: #222436;
-    margin-top: 20px;
-    border-radius: 15px;
-    padding: 5px 20px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  background: #353e8f;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 5px 20px;
 }
 .notify-section{
-    width: 35%;
-    margin: 0 auto;
+  width: 35%;
+  margin: 0 auto;
 }
 .action-left {
-    color: #FF3C5F;
-    margin-top: 10px;
+  color: #FF3C5F;
+  margin-top: 10px;
 }
